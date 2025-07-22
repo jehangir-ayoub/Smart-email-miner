@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-dotenv
+httpx
+msal
+beautifulsoup4
+pytz
+filelock
+requests
+apscheduler
