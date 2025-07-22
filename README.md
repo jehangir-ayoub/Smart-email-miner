@@ -35,11 +35,13 @@ Download ngrok
 #Run it with:
 4. Set Environment Variables
 Create a .env file in the root:
-AZURE_TENANT_ID=your-tenant-id
-AZURE_CLIENT_ID=your-client-id
-AZURE_CLIENT_SECRET=your-client-secret
-TARGET_USER_ID=your-email-id-or-user-guid
+AZURE_TENANT_ID
+AZURE_CLIENT_ID
+AZURE_CLIENT_SECRET
+TARGET_USER_ID
+
 WEBHOOK_CALLBACK_URL=https://your-ngrok-url/email/graph-webhook
+
 #▶️ 5. Run the FastAPI App
 
 uvicorn main:app --reload
