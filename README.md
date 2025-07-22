@@ -43,3 +43,17 @@ WEBHOOK_CALLBACK_URL=https://your-ngrok-url/email/graph-webhook
 #▶️ 5. Run the FastAPI App
 
 uvicorn main:app --reload
+
+# PROJEC STRUCTURE
+
+.
+├── main.py                        # FastAPI entry point
+├── email_webhook.py              # Webhook route + email processing
+├── subscription.py               # MS Graph subscription manager
+├── functions/
+│   ├── document_chunking.py      # Handles text splitting
+│   ├── embedding_model.py        # Embedding logic (e.g., BERT)
+│   └── vectorstore.py            # FAISS or Pinecone integration
+├── vector_stores/email_data/     # Stored vectors and metadata
+├── .env                          # Your secrets (ignored by Git)
+└── requirements.txt
